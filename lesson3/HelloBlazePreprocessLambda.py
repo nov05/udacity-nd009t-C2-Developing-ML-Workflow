@@ -18,21 +18,23 @@ def unzip_data(input_data_path):
         return '/tmp/' + input_data_zip.namelist()[0]
 
 
-# Input data is a file with a single JSON object per line with the following format: 
-# {
-#  "reviewerID": <string>,
-#  "asin": <string>,
-#  "reviewerName" <string>,
-#  "helpful": [
-#    <int>, (indicating number of "helpful votes")
-#    <int>  (indicating total number of votes)
-#  ],
-#  "reviewText": "<string>",
-#  "overall": <int>,
-#  "summary": "<string>",
-#  "unixReviewTime": <int>,
-#  "reviewTime": "<string>"
-# }
+# Input data is a file with a single JSON object per line with the following format.
+'''
+{
+    "reviewerID": <string>,
+    "asin": <string>,
+    "reviewerName" <string>,
+    "helpful": [
+        <int>, (indicating number of "helpful votes")
+        <int>  (indicating total number of votes)
+    ],
+    "reviewText": "<string>",
+    "overall": <int>,
+    "summary": "<string>",
+    "unixReviewTime": <int>,
+    "reviewTime": "<string>"
+}
+'''
 
 
 # We are specifically interested in the fields "helpful" and "reviewText"
