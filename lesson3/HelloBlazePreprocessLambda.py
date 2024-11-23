@@ -1,15 +1,13 @@
-
 import json
 import zipfile
 import os
-import boto3
-from botocore.exceptions import ClientError
+import boto3 # type: ignore
+from botocore.exceptions import ClientError # type: ignore
 
-BUCKET_NAME = 'FILL_THIS_IN'
-PREFIX = 'FILL_THIS_IN'
+BUCKET_NAME = 's3://sagemaker-studio-807711953667-mmx0am1bt28'
+PREFIX = 'lambda_hands_on'
 
 # Function below unzips the archive to the local directory. 
-
 def unzip_data(input_data_path):
     with zipfile.ZipFile(input_data_path, 'r') as input_data_zip:
         input_data_zip.extractall('/tmp/')
@@ -30,10 +28,9 @@ def unzip_data(input_data_path):
 #  "unixReviewTime": <int>,
 #  "reviewTime": "<string>"
 # }
-# 
-# We are specifically interested in the fields "helpful" and "reviewText"
-#
 
+
+# We are specifically interested in the fields "helpful" and "reviewText"
 def label_data(input_data):
     labeled_data = []
     HELPFUL_LABEL = "__label__1"
@@ -54,7 +51,6 @@ def label_data(input_data):
 
 
 # Labeled data is a list of sentences, starting with the label defined in label_data. 
-
 def split_sentences(labeled_data):
     new_split_sentences = []
     for d in labeled_data:
