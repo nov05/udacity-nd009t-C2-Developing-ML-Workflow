@@ -75,11 +75,12 @@ def write_data(data, train_path, test_path, proportion):
 
 if __name__ == "__main__":
 
-    
-    unzipped_path = unzip_data('/opt/ml/processing/input/reviews_Musical_Instruments_5.json.zip')  ## find the file in Lesson 2 folder
+
+    ## find the zip file in Lesson 2 folder
+    unzipped_path = unzip_data('/opt/ml/processing/input/reviews_Musical_Instruments_5.json.zip')  
     labeled_data = label_data(unzipped_path)
     new_split_sentence_data = split_sentences(labeled_data)
     write_data(new_split_sentence_data, 
                '/opt/ml/processing/output/train/hello_blaze_train_scikit',  ## train file path
                '/opt/ml/processing/output/test/hello_blaze_test_scikit',   ## test file path
-               .9)
+               .9)  ## train-test split ratio
