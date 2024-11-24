@@ -1,5 +1,6 @@
 # Udacity-Developing-Your-First-ML-Workflow
-This is the Github repo for Udacity Developing your first ML workflow course. This repo contains the code for demos, exercises and the final project,
+This is the Github repo for Udacity Developing your first ML workflow course. This repo contains the code for demos, exercises and the final project.  
+
 ## Folder Structure
 This repo contains a folder for each lesson and one project folder.
 
@@ -8,3 +9,5 @@ Each lesson folder contains files for exercises and demos. The exercise code sho
 
 ## Project Folder
 The project folder contains all files and instructions necessary for the project.
+
+test
