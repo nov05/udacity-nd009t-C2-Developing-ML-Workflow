@@ -10,4 +10,4 @@ Each lesson folder contains files for exercises and demos. The exercise code sho
 ## Project Folder
 The project folder contains all files and instructions necessary for the project.
 
-test test
+test
