@@ -5,8 +5,8 @@ This is the Github repo for Udacity Developing your first ML workflow course. Th
 
 # **👉 Project 2 Submission: Build a ML Workflow For Scones Unlimited On Amazon SageMaker**  
 
-A CIFAR image classification workflow   
-Udacity AWS Machine Learning Engineer Nanodegree    
+A CIFAR image classification workflow on AWS    
+Udacity AWS Machine Learning Engineer Nanodegree (ND189)     
 
 🟢 **Watch [the project demo video](https://youtu.be/TxnJmCHKoqY)** [(Project notes)](https://docs.google.com/document/d/1FqwqBpwTXh0J3NofO0v3uxq15RGns1Gd_ukteuP827A)      
 
