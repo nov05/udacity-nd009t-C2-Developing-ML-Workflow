@@ -164,6 +164,7 @@ cython_debug/
 
 ## added by nov05
 *.tar.gz  
+*.zip
 project/cifar-100-python/
 project/train/
 project/test/
