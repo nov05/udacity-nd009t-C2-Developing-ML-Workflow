@@ -6,7 +6,7 @@
 input payload:
 {
   "s3_bucket": "sagemaker-us-east-1-807711953667",
-  "endpoint_name": "image-classification-2024-11-26-21-33-53-998",
+  "endpoint_name": "image-classification-2024-11-27-08-01-07-231",
   "threshold": 0.93
 }
 '''

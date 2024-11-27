@@ -8,6 +8,8 @@ This is the Github repo for Udacity Developing your first ML workflow course. Th
 A CIFAR image classification workflow   
 Udacity AWS Machine Learning Engineer Nanodegree    
 
+🟢 **Watch [the project demo video](https://youtu.be/TxnJmCHKoqY)**    
+
 * Step 1, data staging  
     * [Starter notebook](https://github.com/nov05/udacity-nd009t-C2-Developing-ML-Workflow/blob/master/project/starter.ipynb) 
 * Step 2, modeling training / deployment
