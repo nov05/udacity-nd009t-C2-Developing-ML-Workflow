@@ -71,14 +71,20 @@ import base64
 import boto3
 
 def lambda_handler(event, context):
-    image = base64.b64decode(event['image_data'].encode('utf-8'))
+    print(event)
+    event = json.loads(event['body'])
+    image_data = event['image_data']
+    endpoint_name = event['endpoint_name']
+
+    image = base64.b64decode(image_data.encode('utf-8'))
     sagemaker_runtime = boto3.client("sagemaker-runtime")
     response = sagemaker_runtime.invoke_endpoint(
-        EndpointName=event['endpoint_name'], 
+        EndpointName=endpoint_name, 
         ContentType="image/png", 
         Body=image
     )
-    event['inference'] = response["Body"].read().decode("utf-8")
+    event['inference'] = json.loads(response['Body'].read().decode('utf-8'))  ## convert to list
+    event['image_data'] = ''  ## clear image data
     return {
         "statusCode": 200,
         "body": json.dumps(event)
@@ -106,15 +112,22 @@ dict format to JSON:
 import json
 
 def lambda_handler(event, context):
+    print(event)
+    event = json.loads(event['body'])
+    inference = event['inference']
+    threshold = event['threshold']
+
     # Grab the inferences from the event
-    # Check if any values in our inferences are above THRESHOLD
-    meets_threshold = event['inference'][0]>=event['threshold']
+    # Check if any values in our inferences are above threshold
+    meets_threshold = (
+        inference[0]>=threshold or inference[0]<=1-threshold
+    )
     # If our threshold is met, pass our data back out of the
     # Step Function, else, end the Step Function with an error
     if meets_threshold:
         pass
     else:
-        raise("THRESHOLD_CONFIDENCE_NOT_MET")
+        raise Exception("⚠️ The confidence threshold was not met.")
     return {
         'statusCode': 200,
         'body': json.dumps(event)
