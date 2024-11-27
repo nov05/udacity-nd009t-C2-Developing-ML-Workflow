@@ -1,9 +1,11 @@
 # Udacity-Developing-Your-First-ML-Workflow
 This is the Github repo for Udacity Developing your first ML workflow course. This repo contains the code for demos, exercises and the final project.  
 
+---  
+
 # **👉 Project 2 Submission: Build a ML Workflow For Scones Unlimited On Amazon SageMaker**  
 
-CIFAR image classification workflow   
+A CIFAR image classification workflow   
 Udacity AWS Machine Learning Engineer Nanodegree    
 
 * Step 1, data staging  
@@ -34,10 +36,17 @@ Udacity AWS Machine Learning Engineer Nanodegree
     * So far all the inferences are above the threshold.  
     <img src="https://raw.githubusercontent.com/nov05/pictures/refs/heads/master/Udacity/20241119_aws-mle-nanodegree/output.png" width=400>
 
+👉 Others
+
+* AWS Machine Learning Workflow: **Lambda Function** for Preprocessing  
+    * [Video walkthrough](https://youtu.be/IFAxlL1ntb8), [texts and screenshots](https://docs.google.com/document/d/1UIvKF1TWEuyh_h8WI-ciNGdwTzQOp5fpOMSAf22Truo)     
+
+* AWS Machine Learning Workflow: **Step Functions** for Preprocessing and Training workflow
+    * [Video walkthrough](https://youtu.be/6iYb4k1OQqE), [texts and screenshots](https://docs.google.com/document/d/1Um47l8guJbz3r_OnQyV1aTgI_93fkWcyiUI3xig-cmQ)  
+  
 <br>
 <br>  
-
----  
+ 
 ---  
 
 ## Folder Structure
