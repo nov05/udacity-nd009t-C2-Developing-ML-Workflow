@@ -39,10 +39,12 @@ Udacity AWS Machine Learning Engineer Nanodegree
 👉 Others
 
 * AWS Machine Learning Workflow: **Lambda Function** for Preprocessing  
-    * [Video walkthrough](https://youtu.be/IFAxlL1ntb8), [texts and screenshots](https://docs.google.com/document/d/1UIvKF1TWEuyh_h8WI-ciNGdwTzQOp5fpOMSAf22Truo)     
+    * [Video walkthrough](https://youtu.be/IFAxlL1ntb8)  
+    * [texts and screenshots](https://docs.google.com/document/d/1UIvKF1TWEuyh_h8WI-ciNGdwTzQOp5fpOMSAf22Truo)     
 
 * AWS Machine Learning Workflow: **Step Functions** for Preprocessing and Training workflow
-    * [Video walkthrough](https://youtu.be/6iYb4k1OQqE), [texts and screenshots](https://docs.google.com/document/d/1Um47l8guJbz3r_OnQyV1aTgI_93fkWcyiUI3xig-cmQ)  
+    * [Video walkthrough](https://youtu.be/6iYb4k1OQqE)  
+    * [texts and screenshots](https://docs.google.com/document/d/1Um47l8guJbz3r_OnQyV1aTgI_93fkWcyiUI3xig-cmQ)  
   
 <br>
 <br>  
