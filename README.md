@@ -12,7 +12,7 @@ Udacity AWS Machine Learning Engineer Nanodegree (ND189)
 
 * Step 1, data staging  
     * [Starter notebook](https://github.com/nov05/udacity-nd009t-C2-Developing-ML-Workflow/blob/master/project/starter.ipynb) 
-* Step 2, modeling training / deployment
+* Step 2, modeling training / deployment / monitoring  
     * Refer to the starter notebook   
 * Step 3, Lambda functions and Step Functions workflow
     * [Lambda function Python scripts](https://github.com/nov05/udacity-nd009t-C2-Developing-ML-Workflow/blob/master/project/lambda.py)    
