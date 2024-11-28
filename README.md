@@ -42,11 +42,14 @@ Udacity AWS Machine Learning Engineer Nanodegree (ND189)
 
 * AWS Machine Learning Workflow: **Lambda Function** for Preprocessing  
     * [Video walkthrough](https://youtu.be/IFAxlL1ntb8)  
-    * [texts and screenshots](https://docs.google.com/document/d/1UIvKF1TWEuyh_h8WI-ciNGdwTzQOp5fpOMSAf22Truo)     
+    * [Texts and screenshots](https://docs.google.com/document/d/1UIvKF1TWEuyh_h8WI-ciNGdwTzQOp5fpOMSAf22Truo)     
 
 * AWS Machine Learning Workflow: **Step Functions** for Preprocessing and Training workflow
     * [Video walkthrough](https://youtu.be/6iYb4k1OQqE)  
-    * [texts and screenshots](https://docs.google.com/document/d/1Um47l8guJbz3r_OnQyV1aTgI_93fkWcyiUI3xig-cmQ)  
+    * [Texts and screenshots](https://docs.google.com/document/d/1Um47l8guJbz3r_OnQyV1aTgI_93fkWcyiUI3xig-cmQ)  
+
+* AWS SageMaker **Feature Store**, model monitering, **Clarify**
+    * [Notebook](https://github.com/nov05/udacity-nd009t-C2-Developing-ML-Workflow/blob/master/lesson4/exercises-starters.ipynb)    
   
 <br>
 <br>  
