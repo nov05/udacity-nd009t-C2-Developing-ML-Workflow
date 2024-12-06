@@ -30,7 +30,7 @@ import base64
 def lambda_handler(event, context):
     s3_bucket = event['s3_bucket']
     s3 = boto3.resource('s3')
-    # Randomly pick from the test folder in the bucket
+    # Randomly pick an image from the test folder in the bucket
     s3_objects = s3.Bucket(s3_bucket).objects.filter(Prefix='test')
     # Grab any random object key from that folder!
     s3_key = random.choice([x.key for x in s3_objects])
